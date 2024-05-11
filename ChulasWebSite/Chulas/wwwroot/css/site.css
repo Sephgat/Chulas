@@ -1,0 +1,126 @@
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color:sandybrown;
+}
+
+
+/*For nav bar*/
+a {
+    text-decoration: none;
+    color: antiquewhite
+}
+
+a:hover{
+    color: antiquewhite;
+}
+ul {
+    list-style-type: none
+}
+span ul {
+    list-style-type: none;
+    text-align:center;
+    margin: auto;
+    padding: 0;    
+    display: inline-block;
+}
+
+#navi li {
+
+    float: left;
+    
+    padding: 5px;
+}
+
+
+#navi {
+    background-image: url("../images/chulas-wood-back.webp");
+    background-size: cover;
+    background-position: center;
+    height: 75px; 
+}
+
+ul li ul.dropdown li{
+    display: block;
+
+}
+
+ul li ul.dropdown{
+    widows: 100%;
+    position: absolute;
+    display: none;
+}
+
+    ul li a:hover {
+        /*background: #757575*/
+    }
+
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+/*For contact page columns*/
+/* Create three unequal columns that floats next to each other  (Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns_unequal) */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.middle {
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*For google map embed*/
+/*.google-map {
+    padding-bottom: 50%;
+    position: relative;
+    border-style: inset;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}*/
+
+/*Aligning images center*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.img-border{
+    border: 2px solid;
+    border-color: white;
+}
